@@ -64,6 +64,7 @@ const Page: FC = () => {
           <p>プログラミングサークルにて、架空の会社を想定したwebサイトを制作しました。要件定義からコーディングまで、個人で制作しました。</p>
           <p>制作期間：2023年10月〜2023年10月</p>
           <p>使用技術：HTML, CSS, JavaScript</p>
+          <p>URL：<a href="https://yugo55.github.io/free/work/" target="_blank" className="underline text-blue-700">https://yugo55.github.io/free/work/</a></p>
           <p className="mb-5">githubリポジトリ：<a href="https://github.com/yugo55/free" target="_blank" className="underline text-blue-700">https://github.com/yugo55/free</a></p>
           <Image src="/free.png" width={600} height={600} alt="自由制作webサイトのファーストビュー画像" />
         </div>
