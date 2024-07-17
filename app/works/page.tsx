@@ -10,7 +10,7 @@ type Props = {
   children: ReactNode;
 };
 
-export const Modal: FC<Props> = ({ isVisible, onClose, children }) => {
+const Modal: FC<Props> = ({ isVisible, onClose, children }) => {
   return (
     <AnimatePresence>
       {isVisible && (
