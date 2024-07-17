@@ -23,7 +23,7 @@ export const Modal: FC<Props> = ({ isVisible, onClose, children }) => {
   );
 };
 
-export default function Page() {
+const Page: FC = () => {
   const [visibleModal, setVisibleModal] = useState<number | null>(null);
 
   const handleModalOpen = (index: number) => {
@@ -71,7 +71,7 @@ export default function Page() {
       <Modal isVisible={visibleModal === 1} onClose={handleModalClose}>
         <div className="p-6">
           <p className="text-2xl font-semibold">出欠管理アプリ</p>
-          <p>プラグラミングサークル内で使用するメンバーの出欠管理をするアプリの制作に携わりました。メンバーの出欠登録、チームの予定作成ができるネイティブアプリです。</p>
+          <p>プログラミングサークル内で使用するメンバーの出欠管理をするアプリの制作に携わりました。メンバーの出欠登録、チームの予定作成ができるネイティブアプリです。</p>
           <p>制作期間：2023年11月〜2024年3月</p>
           <p>使用技術：Flutter, Firebase</p>
           <p className="mb-5">githubリポジトリ：<a href="https://github.com/yugo55/Circle-Logpose" target="_blank" className="underline text-blue-700">https://github.com/yugo55/Circle-Logpose</a></p>
@@ -99,3 +99,5 @@ export default function Page() {
     </div>
   );
 }
+
+export default Page;
