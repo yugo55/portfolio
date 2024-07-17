@@ -37,6 +37,7 @@ export default function Page() {
   return (
     <div className="px-14 pt-16">
       <h2 className="text-8xl font-bold mb-6">works</h2>
+      <a href="https://github.com/yugo55" target="_blank" className="block text-xl text-blue-700 underline mb-2">githubはこちら</a>
       <div>
         <ul className="grid grid-cols-4 gap-5">
           <motion.li onClick={() => handleModalOpen(0)} className="w-80 h-80 bg-blue-500 bg-opacity-40 rounded-xl cursor-pointer flex flex-col">
@@ -63,7 +64,7 @@ export default function Page() {
           <p>プログラミングサークルにて、架空の会社を想定したwebサイトを制作しました。要件定義からコーディングまで、個人で制作しました。</p>
           <p>制作期間：2023年10月〜2023年10月</p>
           <p>使用技術：HTML, CSS, JavaScript</p>
-          <p className="mb-5">githubリポジトリ：<a href="https://github.com/yugo55/free" className="underline text-blue-700">https://github.com/yugo55/free</a></p>
+          <p className="mb-5">githubリポジトリ：<a href="https://github.com/yugo55/free" target="_blank" className="underline text-blue-700">https://github.com/yugo55/free</a></p>
           <Image src="/free.png" width={600} height={600} alt="自由制作webサイトのファーストビュー画像" />
         </div>
       </Modal>
@@ -73,7 +74,7 @@ export default function Page() {
           <p>プラグラミングサークル内で使用するメンバーの出欠管理をするアプリの制作に携わりました。メンバーの出欠登録、チームの予定作成ができるネイティブアプリです。</p>
           <p>制作期間：2023年11月〜2024年3月</p>
           <p>使用技術：Flutter, Firebase</p>
-          <p className="mb-5">githubリポジトリ：<a href="https://github.com/yugo55/Circle-Logpose" className="underline text-blue-700">https://github.com/yugo55/Circle-Logpose</a></p>
+          <p className="mb-5">githubリポジトリ：<a href="https://github.com/yugo55/Circle-Logpose" target="_blank" className="underline text-blue-700">https://github.com/yugo55/Circle-Logpose</a></p>
           <Image src="/logpose.png" width={200} height={200} alt="出欠管理アプリの写真" />
         </div>
       </Modal>
@@ -83,7 +84,7 @@ export default function Page() {
           <p>インターン先で制作したTwitterのアカウントクローラーです。コマンドライン引数に入力した値でアカウント検索した結果のアカウントを、スクロール制限がかかるまでアカウント名やフォロワー数などを取得するクローラーです。インターン先の企業の営業をかけるアカウントを効率よく抽出するために制作しました。</p>
           <p>制作期間：2024年3月〜2024年3月</p>
           <p>使用技術：Ruby</p>
-          <p className="mb-5">githubリポジトリ：<a href="https://github.com/yugo55/twitter_account_crawler" className="underline text-blue-700">https://github.com/yugo55/twitter_account_crawler</a></p>
+          <p className="mb-5">githubリポジトリ：<a href="https://github.com/yugo55/twitter_account_crawler" target="_blank" className="underline text-blue-700">https://github.com/yugo55/twitter_account_crawler</a></p>
         </div>
       </Modal>
       <Modal isVisible={visibleModal === 3} onClose={handleModalClose}>
@@ -92,7 +93,7 @@ export default function Page() {
           <p>IT系のニュース記事を効率よく吸収したいと考え、ニュース記事を要約してくれるクローラーを個人で制作しました。要約したいニュースサイトのスクリプトを実行するとそれぞれの記事が要約された結果が出力されるようにしています。UIも作り、ブラウザ上で完結できるようにしようかと検討しているところです。</p>
           <p>制作期間：2024年4月〜2024年4月</p>
           <p>使用技術：Python</p>
-          <p className="mb-5">githubリポジトリ：<a href="https://github.com/yugo55/summarize_crawler" className="underline text-blue-700">https://github.com/yugo55/summarize_crawler</a></p>
+          <p className="mb-5">githubリポジトリ：<a href="https://github.com/yugo55/summarize_crawler" target="_blank" className="underline text-blue-700">https://github.com/yugo55/summarize_crawler</a></p>
         </div>
       </Modal>
     </div>
