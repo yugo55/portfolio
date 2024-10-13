@@ -17,6 +17,8 @@ export default function Page() {
   const jsDuration = calcurateDuration(jsStartDate);
   const nextReactStartDate = '2024-06-01';
   const nextReactDuration = calcurateDuration(nextReactStartDate);
+  const pythonStartDate = '2024-01-01';
+  const pythonDuration = calcurateDuration(pythonStartDate);
   
   return (
     <div className="px-14 pt-16">
@@ -40,7 +42,7 @@ export default function Page() {
       </div>
       <div className="mb-2">
         <p className="text-xl bg-blue-500 inline-block rounded-3xl text-blue-50 p-1">Python</p>
-        <p className="inline-block">：0年3ヶ月</p>
+        <p className="inline-block">：{pythonDuration}</p>
       </div>
       <div className="mb-2">
         <p className="text-xl bg-blue-500 inline-block rounded-3xl text-blue-50 p-1 mr-1">Next.js</p>
@@ -52,7 +54,7 @@ export default function Page() {
         <p className="inline-block">：0年6ヶ月</p>
       </div>
       <div className="mt-4">
-        <p>現在はNext.jsとReactを学習中です。早稲田祭の企画としてQRスタンプラリーをReactで制作しています。</p>
+        <p>現在はNext.jsとReactを学習中です。SpotifyのAPIを使用して、任意のお気に入りアーティストの楽曲からランダムでプレイリストを作成するwebアプリを製作中です。</p>
       </div>
     </div>
   );
