@@ -121,6 +121,19 @@ const Page: FC = () => {
               spotifyプレイリスト生成アプリ
             </p>
           </motion.li>
+          <motion.li
+            onClick={() => handleModalOpen(5)}
+            className="w-80 h-80 bg-blue-500 bg-opacity-40 rounded-xl cursor-pointer flex flex-col"
+          >
+            <img
+              src="/master-task-app.png"
+              alt=""
+              className="rounded-tr-xl rounded-tl-xl object-cover w-full h-2/3"
+            />
+            <p className="h-full grid place-items-center text-lg font-semibold">
+              マスターToDoアプリ
+            </p>
+          </motion.li>
         </ul>
       </div>
       <Modal isVisible={visibleModal === 0} onClose={handleModalClose}>
@@ -250,6 +263,32 @@ const Page: FC = () => {
             width={600}
             height={600}
             alt="spotifyプレイリスト生成アプリ画像"
+          />
+        </div>
+      </Modal>
+      <Modal isVisible={visibleModal === 5} onClose={handleModalClose}>
+        <div className="p-6">
+          <p className="text-2xl font-semibold">マスターToDoアプリ</p>
+          <p>
+            月毎にタスクを振り分け、進捗管理をするアプリ。その月の目標を決め、その目標の達成をサポートするTodoアプリ。
+          </p>
+          <p>制作期間：2024年11月〜2025年2月</p>
+          <p>使用技術：Next.js, React, MySQL</p>
+          <p className="mb-5">
+            githubリポジトリ：
+            <a
+              href="https://github.com/yugo55/create-spotify-playlist-app"
+              target="_blank"
+              className="underline text-blue-700"
+            >
+              https://github.com/yugo55/master-task-list
+            </a>
+          </p>
+          <Image
+            src="/master-task-app.png"
+            width={600}
+            height={600}
+            alt="マスターTodoアプリ画像"
           />
         </div>
       </Modal>
